@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: taskemoji</title>
+<meta name="description" content="How taskemoji accesses, uses, stores and shares Google Tasks data.">
+<!-- EDIT BEFORE PUBLISHING: replace [your email address] below with a real contact address. -->
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fcfcfd; --text: #1c2430; --muted: #586273; --rule: #dde2ea; --link: #1d56b8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111418; --text: #e7eaee; --muted: #9aa4b2; --rule: #2a313b; --link: #8db8ff; }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; color: var(--text);
+    font: 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 38rem; margin: 0 auto; padding: 3.5rem 1.25rem 4rem; }
+  h1 { font-size: 2.25rem; line-height: 1.15; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; line-height: 1.3; margin: 2.25rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+  .updated { color: var(--muted); margin-bottom: 1.75rem; }
+  nav { margin-bottom: 2rem; font-size: 0.95rem; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">taskemoji home</a></nav>
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: October 2026</p>
+
+  <h2>What taskemoji is</h2>
+  <p>taskemoji is a small personal tool that edits Google Tasks. It runs as a Google Apps Script project inside its owner's own Google account. It is not a public service and has no servers, website accounts or database of its own.</p>
+
+  <h2>Data it accesses</h2>
+  <p>When the account owner approves it, taskemoji can view and manage Google Tasks in that account. In practice it reads:</p>
+  <ul>
+    <li>the names of your task lists;</li>
+    <li>each task's title, due date, position in the list, completion state and, for subtasks, its parent.</li>
+  </ul>
+  <p>It also asks for permission to create time-based triggers, so it can run on a schedule without being started by hand.</p>
+
+  <h2>What it does with that data</h2>
+  <p>It uses the data only to provide the features described on the <a href="index.html">home page</a>: it edits task titles (adding emoji), changes due dates, reorders tasks within a list and, when two color markers in a list name conflict, edits that list's name. It does nothing else with your data.</p>
+
+  <h2>What it stores</h2>
+  <ul>
+    <li><strong>In Google Tasks:</strong> the changes above, made directly to your own tasks.</li>
+    <li><strong>In the script's own storage:</strong> for each task, an internal ID with the date taskemoji first saw it, plus the time of its last run. Task titles are not stored there.</li>
+    <li><strong>In execution logs:</strong> the Apps Script project keeps logs that can include task and list titles, for example when a title is changed. These logs live in the owner's Google account and are visible only to the owner.</li>
+  </ul>
+  <p>Nothing is copied to any server outside Google.</p>
+
+  <h2>Sharing</h2>
+  <p>taskemoji does not sell, share, transfer or disclose your data to anyone. It does not use it for advertising or analytics, and no person reads it.</p>
+
+  <h2>Your control</h2>
+  <ul>
+    <li>You can withdraw access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Deleting the Apps Script project removes the script, its stored dates and its logs.</li>
+    <li>Changes already made to your tasks stay in Google Tasks until you edit or delete them.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>taskemoji's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the way taskemoji handles data changes, this page will be updated and the date above changed.</p>
+
+  <footer>
+    Contact: <a href="mailto:[your email address]">[your email address]</a>
+  </footer>
+</main>
+</body>
+</html>

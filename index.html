@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>taskemoji: emoji priorities and types for Google Tasks</title>
+<meta name="description" content="taskemoji turns short codes in Google Tasks titles into emoji, sorts lists by priority and sets due dates. A personal tool.">
+<!-- EDIT BEFORE PUBLISHING: replace [your email address] below with a real contact address. -->
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fcfcfd; --text: #1c2430; --muted: #586273; --rule: #dde2ea;
+    --link: #1d56b8; --block: #f2f5f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111418; --text: #e7eaee; --muted: #9aa4b2; --rule: #2a313b;
+      --link: #8db8ff; --block: #1a2027;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; color: var(--text);
+    font: 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 38rem; margin: 0 auto; padding: 3.5rem 1.25rem 4rem; }
+  h1 { font-size: 2.5rem; line-height: 1.1; margin: 0 0 1rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; line-height: 1.3; margin: 2.5rem 0 0.5rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+  .lede { font-size: 1.25rem; line-height: 1.5; margin-bottom: 1.75rem; }
+  .example {
+    background: var(--block); border: 1px solid var(--rule); border-radius: 8px;
+    padding: 1rem 1.25rem; margin: 0 0 1rem; display: grid; gap: 0.75rem;
+  }
+  .example div { display: grid; gap: 0.15rem; }
+  .example span { color: var(--muted); font-size: 0.9rem; }
+  .example code { font: 1rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+  .example strong { font-size: 1.35rem; font-weight: 600; overflow-wrap: anywhere; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>taskemoji</h1>
+  <p class="lede">taskemoji adds emoji to your Google Tasks, so priority, type and rhythm show at a glance on every device.</p>
+
+  <div class="example" role="group" aria-label="Example of a task title before and after">
+    <div><span>You type</span><code>p1 -tb draft the launch plan</code></div>
+    <div><span>It becomes</span><strong>🔴 🗄️ draft the launch plan</strong></div>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Turns short codes typed in a task title into emoji: <code>p1</code> to <code>p4</code> for priority, <code>-tb</code> and similar for the kind of task, <code>-g</code> and similar for a color label.</li>
+    <li>Reads markers in a list's name, such as <code>+🎯</code>, and applies them to every task in that list.</li>
+    <li>Sorts each list by priority and sets due dates from list names such as "Today" or "This week".</li>
+    <li>Adds repeating emoji over time, for example one more 🎉 each week a task has been around.</li>
+  </ul>
+  <p>Everything is written back into your own Google Tasks, so the result appears in the Tasks app, in Google Calendar and on your phone.</p>
+
+  <h2>Who it is for</h2>
+  <p>taskemoji is a small personal tool. It runs inside its owner's Google account as a Google Apps Script project and is not a public service.</p>
+
+  <h2>Permissions and your data</h2>
+  <p>To do its job, taskemoji asks for permission to view and manage Google Tasks and to run on a schedule. It does not send your tasks anywhere else. The details are in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    Contact: <a href="mailto:[your email address]">[your email address]</a>
+  </footer>
+</main>
+</body>
+</html>
